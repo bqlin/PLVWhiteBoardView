@@ -86,7 +86,7 @@
 }
 
 - (CAShapeLayer *)buildShapeLayer {
-	CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+	CAShapeLayer *shapeLayer = self.layer ? (CAShapeLayer *)self.layer : [CAShapeLayer layer];
 	self.layer = shapeLayer;
 	shapeLayer.backgroundColor = [UIColor clearColor].CGColor;
 	shapeLayer.fillColor = [UIColor clearColor].CGColor;
@@ -99,7 +99,7 @@
 }
 
 - (CATextLayer *)buildTextLayer {
-	CATextLayer *textLayer = [CATextLayer layer];
+	CATextLayer *textLayer = self.layer ? (CATextLayer *)self.layer : [CATextLayer layer];
 	self.layer = textLayer;
 	CGPoint textOrigin = self.points.firstObject.CGPointValue;
 	CGSize textSize = [self.content sizeWithAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:self.size]}];
