@@ -13,6 +13,8 @@
 		03E07FAF1FDE88CC00C62D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E07FAE1FDE88CC00C62D3D /* Assets.xcassets */; };
 		03E07FB21FDE88CC00C62D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E07FB01FDE88CC00C62D3D /* LaunchScreen.storyboard */; };
 		03E07FB51FDE88CC00C62D3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E07FB41FDE88CC00C62D3D /* main.m */; };
+		03E07FC01FDE895400C62D3D /* PLVWhiteBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E07FBD1FDE895400C62D3D /* PLVWhiteBoardView.m */; };
+		03E07FC11FDE895400C62D3D /* PLVMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E07FBE1FDE895400C62D3D /* PLVMark.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		03E07FB11FDE88CC00C62D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03E07FB31FDE88CC00C62D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03E07FB41FDE88CC00C62D3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03E07FBC1FDE895400C62D3D /* PLVMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVMark.h; sourceTree = "<group>"; };
+		03E07FBD1FDE895400C62D3D /* PLVWhiteBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLVWhiteBoardView.m; sourceTree = "<group>"; };
+		03E07FBE1FDE895400C62D3D /* PLVMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLVMark.m; sourceTree = "<group>"; };
+		03E07FBF1FDE895400C62D3D /* PLVWhiteBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVWhiteBoardView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 		03E07F991FDE88CC00C62D3D = {
 			isa = PBXGroup;
 			children = (
+				03E07FBB1FDE895400C62D3D /* PLVWhiteBoard */,
 				03E07FA41FDE88CC00C62D3D /* Demo */,
 				03E07FA31FDE88CC00C62D3D /* Products */,
 			);
@@ -69,6 +76,18 @@
 				03E07FB41FDE88CC00C62D3D /* main.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		03E07FBB1FDE895400C62D3D /* PLVWhiteBoard */ = {
+			isa = PBXGroup;
+			children = (
+				03E07FBC1FDE895400C62D3D /* PLVMark.h */,
+				03E07FBE1FDE895400C62D3D /* PLVMark.m */,
+				03E07FBF1FDE895400C62D3D /* PLVWhiteBoardView.h */,
+				03E07FBD1FDE895400C62D3D /* PLVWhiteBoardView.m */,
+			);
+			name = PLVWhiteBoard;
+			path = ../PLVWhiteBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E07FC01FDE895400C62D3D /* PLVWhiteBoardView.m in Sources */,
 				03E07FAA1FDE88CC00C62D3D /* ViewController.m in Sources */,
 				03E07FB51FDE88CC00C62D3D /* main.m in Sources */,
 				03E07FA71FDE88CC00C62D3D /* AppDelegate.m in Sources */,
+				03E07FC11FDE895400C62D3D /* PLVMark.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +300,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ETRBR9HA5V;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.polyv.PLVWhiteBoard.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,8 +315,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ETRBR9HA5V;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.polyv.PLVWhiteBoard.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
