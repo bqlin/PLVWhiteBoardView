@@ -28,8 +28,6 @@
 
 #pragma mark - public
 
-
-
 - (void)addMark:(PLVMark *)mark {
 	[self.layer addSublayer:mark.layer];
 	[self.marks addObject:mark];
